@@ -9,6 +9,7 @@
 	<meta name="referrer" content="always">
 
 	<meta name="keywords" content="IT 技术 导航 iOS Android">
+	<meta name="description" content="IT 技术 导航 iOS Android">
 
 	<title>IT技术导航</title>
 	<link rel="shortcut icon" href="img/haha.jpeg" type="image/jpeg">
@@ -644,10 +645,27 @@
 		</div> <!-- <div class="box box-3"> -->
 	</div>
 
+	<section class="post-comments">
+		<div id="comments-container"></div>
+		<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+		<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+		<script>
+			var gitment = new Gitment({
+				owner: 'alexhe',
+				repo: 'alexhe.github.io',
+				oauth: {
+					client_id: '6c9032eaccd5887ab31c',          //比如我的828***********
+					client_secret: 'dc85f13eb0d3fcdadd4a02011c02bc5efb5581be',  //比如我的49e************************
+				},
+			})
+			gitment.render('comments-container')
+		</script>
+
+	</section>
 
 	<footer class="footer">
 		<hr class="bg-gray" />
-		<div class="footer-inner"  align="center">
+		<div class="footer-inner" align="center">
 
 			<div class="busuanzi-count">
 				<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -680,17 +698,17 @@
 		</div>
 	</footer>
 
-<div class="layout fixed-bottom text-center" align="center">
+	<div class="layout fixed-bottom text-center" align="center">
 
-	<hr class="bg-gray" />
+		<hr class="bg-gray" />
 
-	<div class="container">
-		<div class="text-center height-big">
-			版权所有 © <a href="//www.linlin.tech" target="_blank">www.linlin.tech</a> All Rights Reserved
+		<div class="container">
+			<div class="text-center height-big">
+				版权所有 © <a href="//www.linlin.tech" target="_blank">www.linlin.tech</a> All Rights Reserved
+			</div>
+			<hr class="space" />
 		</div>
-		<hr class="space" />
 	</div>
-</div>
 
 
 </body>
